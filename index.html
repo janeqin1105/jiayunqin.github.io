@@ -38,7 +38,7 @@
 							<section >
 								<h1>Hey, I'm Jiayun Qin</h1>
 								<p>I am a UI/UX design based in Ottawa CA </p>
-								<a href="files/Resume_UxDesigner_JiayunQin (1).pdf" class="button scrolly" download>RESUME</a>
+								<a href="files/Resume_UxDesigner_JiayunQin (1).pdf" class="button primary icon solid fa-download" download>RESUME</a>
 							</section>
 							
 								
@@ -151,6 +151,7 @@
 						<div class="inner">
 							<h1 style="color: white;">Contact me</h1>
 							<p></p>
+							
 							<div class="split style1">
 								<section>
 									<form method="post" action="https://formsubmit.co/janeqin1105@gmail.com">
@@ -170,10 +171,13 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><button class="button submit primary">Send Message</button></li>
+											<li><button id="open" class="button submit primary">Send Message</button></li>
+											<input type="hidden" name="_next" value="none">
 										</ul>
 									</form>
 								</section>
+
+							
 								<section>
 									<ul class="contact">
 										<li>
@@ -202,6 +206,17 @@
 						</div>
 					</section>
 
+			</div>
+
+		<!--modal -->
+			<div class="modal-container" id="modal_container">
+				<div class="modal">
+					<h2>Thank you!</h2>
+					<p>
+						Thank you for your message, I will contact you back soon. 
+					</p>
+					<span class="button fit small" id="close">Close</span>
+				</div>
 			</div>
 
 		<!-- Footer -->
