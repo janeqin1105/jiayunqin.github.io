@@ -1,18 +1,20 @@
-var password = "123";
+var password ="123";
 var pass;
 
 // password protect before into the website
 pass = prompt('Please enter password to view this page')
 
-if (pass != password){
-    do {
+do {
+    if (pass == password){
+        window.location="http://www.jiayunqin.com";
+    }
+    else{
         alert('Wrong password, please try again.');
         pass = prompt('Please enter password to view this website.')
-    } while (pass != password)
-}   
-else{
-    window.location="http://www.jiayunqin.com";
-}
+    }
+} while (pass != password)
+  
+
 
 //password protect modal into a project page
 function passcheck(){
